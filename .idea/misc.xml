@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_gradient_black_transparent.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/fill_bg_yellow_16.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.271" />
+        <entry key="app/src/main/res/drawable/stroke_grey_8_1.xml" value="0.271" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.30932971014492755" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.30932971014492755" />
+        <entry key="app/src/main/res/layout/fragment_discover.xml" value="0.30932971014492755" />
+        <entry key="app/src/main/res/layout/fragment_login_otp.xml" value="0.30932971014492755" />
+        <entry key="app/src/main/res/layout/fragment_login_phone.xml" value="0.30932971014492755" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3880208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

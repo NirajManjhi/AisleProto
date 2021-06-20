@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AisleTest</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_get_otp">Get OTP</string>
+    <string name="txt_enter_your_phone">Enter Your\nPhone Number</string>
+    <string name="txt_enter_the_otp">Enter The\nOTP</string>
+    <string name="txt_india_phone_code">+91</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_discover">Discover</string>
+    <string name="txt_upgrade">Upgrade</string>
+    <string name="txt_notes">Notes</string>
+    <string name="txt_matches">Matches</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_personal_msg_to_u">Personal messages to you</string>
+    <string name="txt_interested_in_you">Interested In You</string>
+    <string name="x_x">%1$s , %2$d</string>
+    <string name="txt_interested_in_you_desc">Premium members can\nview all their likes at once</string>
+    // error messages
+    <string name="err_phone_invalid">Phone number invalid, please enter a valid number.</string>
+    <string name="err_otp_invalid">Please enter a valid otp.</string>
+    <string name="err_otp_verification_failed">Oops! We are not able to process your request. Please try later..</string>
+    <string name="err_something_wrong">Something went wrong, please try again.</string>
+</resources>

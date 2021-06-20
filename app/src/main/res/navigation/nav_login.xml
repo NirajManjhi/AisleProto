@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginPhoneFragment">
+
+    <fragment
+        android:id="@+id/loginPhoneFragment"
+        android:name="com.aisle.test.ui.login.LoginPhoneFragment"
+        android:label="fragment_login_phone"
+        tools:layout="@layout/fragment_login_phone">
+        <action
+            android:id="@+id/action_loginPhoneFragment_to_loginOtpFragment"
+            app:destination="@id/loginOtpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginOtpFragment"
+        android:name="com.aisle.test.ui.login.LoginOtpFragment"
+        android:label="LoginOtpFragment"
+        tools:layout="@layout/fragment_login_otp" />
+</navigation>

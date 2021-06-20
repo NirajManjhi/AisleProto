@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginPhoneFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="56dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:drawableEnd="@drawable/ic_edit"
+        android:drawablePadding="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
+        tools:text="+91 9562673169" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txvEnterOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_enter_the_otp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumber" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/stroke_grey_8_1"
+        android:gravity="center"
+        android:minWidth="78dp"
+        android:padding="8dp"
+        android:maxLength="4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/txvEnterOtp"
+        tools:text="9999" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/fill_bg_yellow_16"
+        android:text="@string/txt_continue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/edtOtp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="08:56"
+        android:layout_marginStart="12dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnContinue"
+        app:layout_constraintTop_toTopOf="@+id/btnContinue"
+        app:layout_constraintBottom_toBottomOf="@+id/btnContinue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

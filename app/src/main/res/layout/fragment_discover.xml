@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/txt_notes"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvPersonalMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_personal_msg_to_u"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvNotes"
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvNotes"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/txvPersonalMsg"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient_black_transparent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvNotes"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txvNotesReviewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Tap to review 50+ notes" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txvNameAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/txvNotesReviewAll"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Manisha, 26" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvInterestedInYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/txt_interested_in_you"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/cvNotes"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvInterestedInYouDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_interested_in_you_desc"
+            android:textColor="@color/grey"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/txvInterestedInYou"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_bg_yellow_16"
+            android:text="@string/txt_upgrade"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/txvInterestedInYouDesc"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvInterestedOne"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"
+            tools:src="@drawable/bg_gradient_black_transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imvInterestedTwo"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/txvInterestedInYouDesc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvNameOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imvInterestedOne"
+            app:layout_constraintStart_toStartOf="@id/imvInterestedOne"
+            tools:text="Meena" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvInterestedTwo"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:src="@drawable/bg_gradient_black_transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/imvInterestedOne"
+            app:layout_constraintTop_toBottomOf="@id/txvInterestedInYouDesc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvNameTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imvInterestedTwo"
+            app:layout_constraintStart_toStartOf="@id/imvInterestedTwo"
+            tools:text="Beena" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
